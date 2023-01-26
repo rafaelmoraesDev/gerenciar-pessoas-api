@@ -1,0 +1,11 @@
+DROP TABLE IF EXISTS pessoa;
+
+CREATE TABLE pessoa (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nome VARCHAR(255) NOT NULL,
+    data_nascimento DATE NOT NULL,
+    logradouro VARCHAR(255) NOT NULL,
+    cep VARCHAR(10) NOT NULL,
+    numero VARCHAR(10) NOT NULL,
+    cidade VARCHAR(255) NOT NULL
+);
