@@ -45,12 +45,12 @@ public class Pessoa {
 		this.nome = nome;
 	}
 
-	public Date getDataDeNascimento() {
+	public Date getDataNascimento() {
 		return dataNascimento;
 	}
 
-	public void setDataDeNascimento(Date dataDeNascimento) {
-		this.dataNascimento = dataDeNascimento;
+	public void setDataNascimento(Date dataNascimento) {
+		this.dataNascimento = dataNascimento;
 	}
 
 	public Endereco getEndereco() {
