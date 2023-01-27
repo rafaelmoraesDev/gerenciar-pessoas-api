@@ -9,21 +9,22 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
-
-import org.springframework.lang.NonNull;
+import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Size;
 
 @Entity
 @Table(name = "pessoa")
 public class Pessoa {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	@Column(name="ID")
+	@Column(name = "ID")
 	private Long codigo;
 
-	@NonNull
+	@NotNull
+	@Size(min = 3, max = 255)
 	private String nome;
 
-	@Column(name="DATA_NASCIMENTO")
+	@Column(name = "DATA_NASCIMENTO")
 	private Date dataNascimento;
 
 	@Embedded
